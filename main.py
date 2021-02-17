@@ -7,6 +7,7 @@ class App(QtWidgets.QMainWindow):
     def __init__(self):
         super(App, self).__init__()
         uic.loadUi("main.ui", self)
+        self.setWindowTitle("Espresso")
 
         self.connection = sqlite3.connect("coffee.sqlite")
         self.show_bd()
