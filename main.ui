@@ -14,9 +14,27 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="mainLayout">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QTableWidget" name="table"/>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="add">
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTableWidget" name="table"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="change">
+        <property name="text">
+         <string>Изменить</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
